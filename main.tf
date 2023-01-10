@@ -34,3 +34,20 @@ resource "digitalocean_floating_ip" "randovania_metroidprime_run" {
   droplet_id = digitalocean_droplet.main.id
   region     = "fra1"
 }
+
+
+# Temporary GDQ Server
+resource "digitalocean_droplet" "gdq_server" {
+  name       = "GDQ Server"
+  region     = "sfo3"
+  tags       = ["critical"]
+  size       = "s-1vcpu-1gb"
+  image      = "69463186"
+  monitoring = true
+}
+
+resource "digitalocean_floating_ip" "gdq_server_ip" {
+  droplet_id = digitalocean_droplet.main.id
+  region     = "sfo3"
+}
+
