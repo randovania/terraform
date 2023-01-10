@@ -35,10 +35,9 @@ resource "digitalocean_floating_ip" "randovania_metroidprime_run" {
   region     = "fra1"
 }
 
-
 # Temporary GDQ Server
 resource "digitalocean_droplet" "gdq_server" {
-  name       = "GDQ Server"
+  name       = "gdq-server"
   region     = "sfo3"
   tags       = ["critical"]
   size       = "s-1vcpu-1gb"
