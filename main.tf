@@ -42,12 +42,12 @@ resource "digitalocean_droplet" "gdq_server" {
   region     = "sfo3"
   tags       = ["critical"]
   size       = "s-1vcpu-1gb"
-  image      = "69463186"
+  image      = "ubuntu-20-04-x64"
   monitoring = true
 }
 
 resource "digitalocean_floating_ip" "gdq_server_ip" {
-  droplet_id = digitalocean_droplet.main.id
+  droplet_id = digitalocean_droplet.gdq_server.id
   region     = "sfo3"
 }
 
