@@ -2,24 +2,25 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/digitalocean/digitalocean" {
-  version     = "2.20.0"
-  constraints = "2.20.0"
+  version     = "2.25.2"
+  constraints = "~> 2.0"
   hashes = [
-    "h1:0MYhJjRmjnbnepxxtmZtkjPnYkof9TALCj8+CTC+j7c=",
-    "h1:3lPDMpAD5A67iDLhJ9LgVO1oE0dGoJ/e5/UQsu7Lq3c=",
-    "h1:7iBoTST6RbfK4U1O5q0+2y4uEeEGjc17qRaNwPr/DCs=",
-    "h1:8g5nuT0ExA58+OUer5LPKkDYJW3BET5NbgPeI9xYNsg=",
-    "h1:Eoa7bO+nTf2LYYDR5QKhUmSuqbby+KpPk20sC2cOf5A=",
-    "h1:ErYZ8iFCP4pmB8+eOvfkkb+ZFSZumLspdQ/R0kxB1cs=",
-    "h1:IQe+bEKkjjbGFo+X9hzQo5DEzph4uL5odatw8nwFeyE=",
-    "h1:IwpzR19rrZmy9Wh+aQLN4M0zvLX/VwLMmFW2MQaIzeg=",
-    "h1:P7jEiHBkNNHarPC8r1L7K3mZpYgvElAJK1li2qjT6/8=",
-    "h1:QarlnAdOG4mcA/Cu7N7Hef0s6wZRTyOVs4dVedKA+lE=",
-    "h1:TFyt+166xket/zre6FZubfMvPHBRZWWX626swcM5P1k=",
-    "h1:TXPLodtkGaTafR6VQ3sALT4+2cv2TxE49pgNFC/0ENw=",
-    "h1:iWGGmaw/dHEliEUeIjSrxFhvHiSsQe3gNchH6iZqMeM=",
-    "h1:mmOW4BaWFVQSw7TdVIpl+W4Tn9LbtmTv4A/jam14OBY=",
-    "h1:tIlKrfjUHGc5FblHoWQeWPiabw4tosC7P9E1ySyCBR4=",
-    "h1:xSITY4T9KwUiZHTfFJD8csm0WVvGqppQaQ2mdcKoOQU=",
+    "h1:bX8VZuB0QOQwsBYU34FPscisls6BQ0TG5lww0kkKfRw=",
+    "zh:0accb40afb05425f20ff93426c69fa9585fd269f5a0caff9e03173ca3a0f66f0",
+    "zh:0e389b5ebfce42a9a1c78b576acffa6d4f1cfa421810537e6e096a254ff3fec8",
+    "zh:12441f028af172a823b452bb017721d7bf2f6f14e343ac90f361c7bb73ff0874",
+    "zh:18e04874d833d014617ee94971b8ef4638931a3ee7c572f86ee816b74911bcb5",
+    "zh:4e728375e24fdc37e791b3f234c991da342dbad8e1bd878531dd45ab6710c4fe",
+    "zh:4f76bea793d71ae85c72275bd1a5d28ce72afbb41e6cf51cc74d19a470b2c4dc",
+    "zh:588fd686e257b9d989427106e16b7d35a805cf6c1f532dca8fd61c09f19cc95a",
+    "zh:5b433b49869a45d96b95e921dd3cc713471dfa78157fe6f89f09d41c689256c2",
+    "zh:5de660180ab655b64e579564ec5f60f63d7c6633f47dfe4c8ac5a6718d19b5ea",
+    "zh:6395f4d9995f525469d88825f56c88f46b3466db26a3962a645c9a2e65e60dad",
+    "zh:7b04b9ca110f3876000616f9f3f046a974a20db93583786f26dccf10ed9372cf",
+    "zh:81b02a7247a0142075315cdbccd41138c01ed3327036c6b3b417859b06fdac0d",
+    "zh:99e4cf8818eed4e0516a939658ae89a8eefeb4dd9d49303b47b28dc844f983ac",
+    "zh:a85ddbfc6db67508a64c95edd333132efbc40ab7b4d6266023750dc7756f6bec",
+    "zh:b7e9ee035192e2f4d8db11d33e0dabd1969135901bae52d96001fce5f2a4dce8",
+    "zh:ec5d133c03319ec103c80d954be31dd673f44e9c93ec9ed951576e110549b59f",
   ]
 }
