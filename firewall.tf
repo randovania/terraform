@@ -45,4 +45,26 @@ resource "digitalocean_firewall" "http_server" {
     protocol              = "icmp"
     destination_addresses = ["0.0.0.0/0", "::/0"]
   }
+
+  # Hacky rules for remote swarm
+  inbound_rule {
+    protocol         = "udp"
+    port_range       = "4789"
+    source_addresses = ["0.0.0.0/0", "::/0"]
+  }
+  inbound_rule {
+    protocol         = "tcp"
+    port_range       = "7946"
+    source_addresses = ["0.0.0.0/0", "::/0"]
+  }
+  inbound_rule {
+    protocol         = "udp"
+    port_range       = "7946"
+    source_addresses = ["0.0.0.0/0", "::/0"]
+  }
+  inbound_rule {
+    protocol         = "tcp"
+    port_range       = "8000"
+    source_addresses = ["0.0.0.0/0", "::/0"]
+  }
 }

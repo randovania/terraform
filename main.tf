@@ -2,14 +2,18 @@ terraform {
   required_providers {
     digitalocean = {
       source = "digitalocean/digitalocean"
-      version = "2.20.0"
+      version = "~> 2.0"
     }
   }
 }
 
 # Set the variable value in *.tfvars file
 # or using -var="do_token=..." CLI option
-variable "do_token" {}
+variable "do_token" {
+  description = "API token for accessing DigitalOcean"
+  type        = string
+  sensitive   = true
+}
 
 # Configure the DigitalOcean Provider
 provider "digitalocean" {
