@@ -34,3 +34,13 @@ resource "digitalocean_floating_ip" "randovania_metroidprime_run" {
   droplet_id = digitalocean_droplet.main.id
   region     = "fra1"
 }
+
+resource "digitalocean_droplet" "staging" {
+  name       = "staging-fra1-01"
+  region     = "fra1"
+  tags       = ["critical"]
+  size       = "s-1vcpu-1gb"
+  image      = "docker-20-04"
+  monitoring = true
+  ssh_keys   = ["37:df:56:8b:b6:e1:d8:eb:23:93:f4:14:8c:98:1c:43"]
+}
