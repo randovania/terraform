@@ -20,18 +20,9 @@ provider "digitalocean" {
   token = var.do_token
 }
 
-# Create a web server
-resource "digitalocean_droplet" "main" {
-  name       = "ubuntu-s-1vcpu-1gb-fra1-01"
-  region     = "fra1"
-  tags       = ["critical"]
-  size       = "s-1vcpu-2gb"
-  image      = "69463186"
-  monitoring = true
-}
 
 resource "digitalocean_floating_ip" "randovania_metroidprime_run" {
-  droplet_id = digitalocean_droplet.main.id
+  droplet_id = digitalocean_droplet.production.id
   region     = "fra1"
 }
 
