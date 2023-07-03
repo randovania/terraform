@@ -3,7 +3,10 @@
 resource "digitalocean_firewall" "http_server" {
   name = "http-server"
 
-  droplet_ids = [digitalocean_droplet.main.id]
+  droplet_ids = [
+    digitalocean_droplet.main.id,
+    digitalocean_droplet.production.id,
+  ]
 
   inbound_rule {
     protocol         = "tcp"
